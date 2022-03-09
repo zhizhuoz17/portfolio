@@ -147,8 +147,8 @@ window.addEventListener('scroll', scrollHeader)
 /* Show scroll up to top */
 function scrollUp(){
     const scrollUp = document.getElementById('scroll-up');
-    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-up class
-    if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+    // When the scroll is higher than 560 viewport height, add the show-floating-button class to the a tag with the scroll-up class
+    if(this.scrollY >= 560) scrollUp.classList.add('show-floating-button'); else scrollUp.classList.remove('show-floating-button')
 }
 window.addEventListener('scroll', scrollUp)
 
@@ -173,7 +173,7 @@ if (selectedTheme) {
   themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
 }
 
-// Activate / deactivate the theme manually with the button
+// Activate / deactivate the dark/light theme manually with the button
 themeButton.addEventListener('click', () => {
     // Add or remove the dark / icon theme
     document.body.classList.toggle(darkTheme)
@@ -182,3 +182,14 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/* Generate random colour theme*/
+const colourThemeButton = document.getElementById('change-colour')
+
+
+colourThemeButton.addEventListener('click', ()=>{
+    let root = document.documentElement;
+    const hueRandom = Math.floor(Math.random() * 361)
+    root.style.setProperty('--hue-colour',hueRandom)
+})
+
