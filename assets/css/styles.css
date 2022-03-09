@@ -6,7 +6,7 @@
 
     /* Colours */
     /* TODO: randomise colours every time */
-    --hue-colour: 300; /* Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-colour: 200; /* Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     --first-colour: hsl(var(--hue-colour), 69%, 61%);
     --first-colour-second: hsl(var(--hue-colour), 69%, 61%);
@@ -843,6 +843,35 @@ img{
     font-size: 2rem;
     color: var(--first-colour);
     margin-right: var(--mb-0-75);
+}
+
+.contact__socials__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__social{
+    display: flex;
+    vertical-align:center;
+    font-size: 2rem;
+    margin-right: var(--mb-1-5);
+    color: var(--first-colour);
+}
+
+.contact__social > svg{
+    height: 2rem;
+    fill: var(--first-colour);
+}
+
+.contact__social:hover{
+    color: var(--first-colour-lighter);
+    cursor: pointer;
+}
+
+.contact__social > svg:hover{
+    fill: var(--first-colour-lighter);
 }
 
 .contact__title{
