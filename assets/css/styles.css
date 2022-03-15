@@ -1,6 +1,5 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400&display=swap');
-html {zoom: 150%;}
 
 :root {
     --header-height: 3rem;
@@ -1283,6 +1282,8 @@ img{
 
 /* Large devices */
 @media screen and (min-width: 1024px){
+    html {zoom: 150%;}
+
     .header,
     .main,
     .footer__container{
