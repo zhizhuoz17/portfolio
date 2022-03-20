@@ -115,6 +115,7 @@ let swiper = new Swiper(".portfolio__container", {
 
 
 /* Scroll sections active link */
+// TODO: fix
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
