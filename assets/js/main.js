@@ -74,9 +74,9 @@ tabs.forEach(tab => {
 
 
 /* Open and close service modals*/
-const modalViews = document.querySelectorAll('.services__modal'),
-      modalBtns = document.querySelectorAll('.services__button'),
-      modalCloses = document.querySelectorAll('.services__modal-close')
+const modalViews = document.querySelectorAll('.projects__modal'),
+      modalBtns = document.querySelectorAll('.projects__button'),
+      modalCloses = document.querySelectorAll('.projects__modal-close')
 
 let modal = function (modalClick){
     modalViews[modalClick].classList.add('active-modal')
@@ -85,7 +85,6 @@ let modal = function (modalClick){
 modalBtns.forEach((modalBtn,i) => {
     modalBtn.addEventListener('click', ()=>{
         modal(i)
-        console.log('click')
     })
 })
 
