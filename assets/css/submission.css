@@ -1,0 +1,12 @@
+.tymsg{
+    color: black;
+    text-align: center;
+}
+
+.section{
+    padding: 1rem 1rem;
+}
+
+.return-button{
+    font-size: 0.85rem;
+}
