@@ -4,7 +4,6 @@
 :root {
     --header-height: 3rem;
     /* Colours */
-    /* TODO: randomise colours every time */
     --hue-colour: 200;
     /* Purple 250 - Green 142 - Blue 230 - Pink 340*/
     --first-colour: hsl(var(--hue-colour), 69%, 61%);
@@ -763,6 +762,11 @@ img {
     opacity: 0;
     visibility: hidden;
     transition: 0.3s;
+}
+
+.projects__modal-image{
+    width: 300px;
+    height: auto;
 }
 
 .projects__modal-content {
