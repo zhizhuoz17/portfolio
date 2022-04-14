@@ -417,7 +417,10 @@ img {
 /* ABOUT */
 
 .about__img {
-    width: 200px;
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    object-position: top;
     border-radius: 0.5rem;
     justify-self: center;
     align-self: center;
@@ -1124,6 +1127,10 @@ img {
     .nav__list {
         column-gap: 0;
     }
+    .about__img{
+        width: 180px;
+        height: 200px;
+    }
     .home__content {
         grid-template-columns: 0.25fr 3fr;
     }
@@ -1169,6 +1176,10 @@ img {
     }
     .home__img {
         order: 1;
+    }
+    .about__img{
+        width: 250px;
+        height: 200px;
     }
     .header,
     .main,
@@ -1261,6 +1272,7 @@ img {
     }
     .about__img {
         width: 350px;
+        height: 280px;
     }
     .about__description {
         text-align: initial;
