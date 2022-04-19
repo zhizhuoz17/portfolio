@@ -832,6 +832,9 @@ img {
 
 .portfolio__img {
     width: 265px;
+    height: 180px;
+    object-fit: cover;
+    object-position: top;
     border-radius: 0.5rem;
     justify-self: center;
 }
